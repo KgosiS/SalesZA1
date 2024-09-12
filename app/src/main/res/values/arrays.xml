@@ -1,0 +1,9 @@
+<resources>
+    <string-array name="voucher_values">
+        <item>10000 points = 100 ZAR</item>
+        <item>20000 points = 200 ZAR</item>
+        <item>30000 points = 300 ZAR</item>
+        <item>40000 points = 400 ZAR</item>
+        <item>50000 points = 500 ZAR</item>
+    </string-array>
+</resources>

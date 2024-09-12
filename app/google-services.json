@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "220042251361",
+    "project_id": "salesza",
+    "storage_bucket": "salesza.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220042251361:android:f77e71febde49fac68ae20",
+        "android_client_info": {
+          "package_name": "com.example.fnb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyXMcDSxdcojGYZk4SZl5oNHdVbP82j1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

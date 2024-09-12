@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_blue"
+    tools:context=".FinancialLiteracyActivity">
+
+    <!-- Header TextView -->
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Basic Financial Literacy "
+        android:textSize="28sp"
+        android:fontFamily="cursive"
+        android:background="@drawable/border_blue"
+        android:textStyle="bold"
+        android:textColor="@color/fnb_blue"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Definitions Section -->
+    <TextView
+        android:id="@+id/definitions_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Financial Definitions"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/header_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ScrollView
+        android:id="@+id/definitions_scroll_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/definitions_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tips_section"
+        tools:ignore="UnknownId">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Example Definition -->
+            <TextView
+                android:id="@+id/definition_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Budget: A plan for managing income and expenses."
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/definition_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Savings: Money set aside for future use."
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:paddingBottom="8dp"/>
+
+            <!-- Add more definitions as needed -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Tips Section -->
+    <TextView
+        android:id="@+id/tips_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Financial Tips"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/definitions_scroll_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ScrollView
+        android:id="@+id/tips_scroll_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tips_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/examples_section"
+        tools:ignore="UnknownId">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Example Tip -->
+            <TextView
+                android:id="@+id/tip_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Track your spending to understand where your money goes."
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tip_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Save a portion of your income regularly."
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:paddingBottom="8dp"/>
+
+            <!-- Add more tips as needed -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Examples Section -->
+    <TextView
+        android:id="@+id/examples_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Financial Examples"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/tips_scroll_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ScrollView
+        android:id="@+id/examples_scroll_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/examples_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/quiz_section"
+        tools:ignore="UnknownId">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Example -->
+            <TextView
+                android:id="@+id/example_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. If you earn $3000 a month, and your expenses are $2500, you should aim to save the remaining $500."
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:paddingBottom="8dp"/>
+
+            <!-- Add more examples as needed -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Quiz Section -->
+    <Button
+        android:id="@+id/start_quiz_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Start Quiz"
+        android:textColor="#263238"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/examples_scroll_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

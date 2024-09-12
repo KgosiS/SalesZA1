@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_blue"
+    android:id="@+id/drawer_layout3"
+    tools:context=".VouchersActivity">
+
+    <!-- Main content layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <!-- Available Points -->
+            <TextView
+                android:id="@+id/tv_available_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available Points: 0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="16dp" />
+
+            <!-- Dropdown for selecting voucher value -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Voucher:"
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spinner_voucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/voucher_values" />
+
+            <!-- Upload Screenshot -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Screenshot for Verification:"
+                android:textSize="16sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <Button
+                android:id="@+id/btn_upload_screenshot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose File"
+                android:drawablePadding="8dp" />
+
+            <TextView
+                android:id="@+id/tv_screenshot_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No file chosen"
+                android:textSize="14sp"
+                android:paddingTop="8dp" />
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/btn_submit_claim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Claim Voucher"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/fnb_orange"
+                android:textColor="@android:color/white" />
+
+            <!-- Section for displaying previous claims -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Previously Claimed Vouchers:"
+                android:textSize="18sp"
+                android:paddingTop="24dp"
+                android:paddingBottom="8dp" />
+
+            <ListView
+                android:id="@+id/lv_claimed_vouchers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="1dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu" />
+
+    <!-- Toolbar with hamburger icon -->
+
+</androidx.drawerlayout.widget.DrawerLayout>

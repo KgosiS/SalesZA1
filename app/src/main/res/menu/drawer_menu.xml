@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_sales"
+        android:title="Sales" />
+    <item
+        android:id="@+id/nav_tips"
+        android:title="Daily Tips" />
+    <item
+        android:id="@+id/nav_voucher"
+        android:title="Claim Vouchers" />
+    <item
+        android:id="@+id/nav_watch_ads"
+        android:title="Watch Ads" />
+    <item
+        android:id="@+id/nav_finance"
+        android:title="Financial Literacy" />
+</menu>
